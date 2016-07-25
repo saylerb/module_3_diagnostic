@@ -12,9 +12,19 @@ gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
 
+gem 'faraday'
+gem 'pry'
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
