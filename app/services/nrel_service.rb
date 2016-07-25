@@ -6,7 +6,7 @@ class NrelService
   end
 
   def get_fuel_data
-    response = conn.get("https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV['NREL_API_KEY']}&location=80203&radius=6&fuel_type=ELEC, LPG")
+    response = conn.get("https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV['NREL_API_KEY']}&location=80203&radius=6&fuel_type=ELEC, LPG&limit=10")
     JSON.parse(response.body, symbolize_names: :true)
   end
 
