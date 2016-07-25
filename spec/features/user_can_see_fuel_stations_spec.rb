@@ -9,9 +9,9 @@ RSpec.feature "user can see fuel stations" do
    
     #expect(current_path).to eq("/search?zip=80203")
 
-    expect(page).to have_content("Name: Cultural Center Complex Garage")
+    expect(page).to have_content("Cultural Center Complex Garage")
     expect(page).to have_content("Address: 65 W 12th Ave")
-    expect(page).to have_content("Fuel Types: ELEC")
+    expect(page).to have_content("Fuel Type: ELEC")
     expect(page).to have_content("Distance: 0.41801")
   end
 end
