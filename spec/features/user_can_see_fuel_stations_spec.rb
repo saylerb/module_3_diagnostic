@@ -4,7 +4,7 @@ RSpec.feature "user can see fuel stations" do
   scenario "a user navigates to root and sees a list of fuel stations" do
     visit root_path
 
-    fill_in "Search", with: "80203"
+    fill_in "q", with: "80203"
     click_on "Locate"
    
     expect(current_path).to eq("/search?zip=80203")
