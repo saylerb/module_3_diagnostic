@@ -14,6 +14,7 @@ gem "less-rails"
 
 gem 'faraday'
 gem 'pry'
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
